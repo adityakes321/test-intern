@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>body {
+      margin: 0;
+      color: #0e0d0b;
+      background-color: rgb(198, 244, 240);
+    }
+    
+    /* .cover {
+    } */
+    
+    .cover-background {
+      display: flex;
+      flex-flow: row;
+      height: 60vh;
+    }
+    
+    .cover-background .left-side {
+      background-color: white;
+      flex: 1 1 50%;
+    }
+    
+    .cover-background .right-side {
+      background-color: #f2e8e6;
+      flex: 1 1 50%;
+    }
+    
+    .navbar {
+      position: absolute;
+      display: flex;
+      padding: 3vh 3vw;
+      flex-flow: row;
+      align-items: center;
+      top: 0px;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: -webkit-fill-available;
+      justify-content: space-between;
+    }
+    
+    .navbar .left-side {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    
+    .navbar .right-side {
+      display: flex;
+      flex-flow: row;
+    }
+    
+    .navbar .right-side .link {
+      padding: 0 1vw;
+    }
+    
+    .cover-content {
+      display: flex;
+      flex-flow: row;
+      height: 60vh;
+      position: absolute;
+      width: 80vw;
+      top: 20vh;
+    }
+    
+    .cover-content .left-side {
+     
+      flex: 1 1 50%;
+    }
+    
+    .cover-content .left-side .lef-side-content {
+      flex: 1 1 50%;
+      display: flex;
+      flex-flow: column;
+      position: absolute;
+      height: -webkit-fill-available;
+      left: 15vw;
+      font-size: 1.5rem;
+      place-content: center;
+      font-weight: bold;
+      align-items: center;
+      z-index: 2;
+      text-transform: uppercase;
+    }
+    
+    .cover-content .left-side .lef-side-content img {
+      height: 19vh;
+      z-index: 3;
+      position: absolute;
+      bottom: 27vh;
+      right: 2vw;
+    }
+    
+    .cover-content .right-side {
+      background-image: url(picture1.jpg);
+      flex: 1 1 50%;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .about {
+      background-color: #f2e8e6;
+      display: flex;
+      width: auto;
+      flex-flow: row;
+      height: -webkit-fill-available;
+      margin: 35vh 0 3vh 0;
+    }
+    
+    .about .about-png {
+      display: flex;
+      margin: 0 2vw;
+      flex-flow: row;
+      padding: 15vh 0;
+      margin-top: -5vh;
+      position: absolute;
+      background-size: contain;
+      background-position: center;
+      justify-content: center;
+      background-image: url(icon.png);
+      background-repeat: no-repeat;
+      top: 150px;
+    }
+    
+    .about .col1 {
+      background-image: url(picture2.jpg);
+      flex: 0 1 30%;
+      height: 60vh;
+      background-position: center;
+      background-size: cover;
+      border: 15px solid white;
+    }
+    
+    .about .col2 {
+      display: flex;
+      flex: 0 1 30%;
+      padding: 7vh 4vw;
+      background: white;
+      height: fit-content;
+      margin-left: 2vw;
+      flex-flow: column;
+    }
+    
+    .about .col2 .title {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    
+    .about .col2 .content {
+      opacity: 0.7;
+      line-height: 1.5rem;
+      padding: 3vh 0;
+    }
+    
+    .about .col2 .button {
+      text-transform: uppercase;
+      color: white;
+      width: fit-content;
+      padding: 2vh 2vw;
+      background-color: #020202;
+    }
+    
+    .offer {
+      background-image: url(picture1.jpg);
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      height: 80vh;
+      background-position: top;
+      margin-top: 35vh;
+      background-size: cover;
+      padding: 0 23vw;
+      text-align: center;
+      place-content: center;
+    }
+    
+    .offer .content {
+      display: flex;
+      padding: 7vh 4vw;
+      flex-flow: column;
+      align-items: center;
+      background-color: white;
+    }
+    
+    .offer .content .title {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .offer .content .text {
+      line-height: 1.5rem;
+      padding: 3vh 0;
+    }
+    
+    .offer .content .button {
+      text-transform: uppercase;
+      color: white;
+      width: fit-content;
+      padding: 2vh 2vw;
+      background-color: #020202;
+    }
+    .col0{
+      background-color: aquamarine;
+    }
+    </style>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Research Group</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="input_components/input_journal.html">Journal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="input_components/input_conference.html">Conference</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="input_components/input_bookChapter.html">Book Chapter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="input_components/input_reference.html">Reference</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="input_components/input_patent.html">Patent</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     
+      <div class="about">
+        <div class="about-png">
+          <div class="col1">
+            <img src="https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+          </div>
+          <div class="col2">
+            <div class="title">About us</div>
+            <div class="content">abcd
+  
+            </div>
+            <div class="button">more</div>
+          </div>
+        </div>
+      </div>
+      <div class="offer">
+        <div class="content">
+          <div class="title"></div>
+          <div class="text">Lorem ipsum</div>
+            <div class="button">More detail</div>
+        </div>
+      </div>
+
+
+      <div class="citation-js" data-input="10.1080/03772063.2016.1147389" data-output-format="bibtex" data-output-template="apa">
+        <a href="https://wikidata.org/wiki/Q21972834">Link</a>
+      </div>
+
+      
+      <div class="page-header text-center">
+        <h2><span class="fa"></span>Click here to Logout</h2><br>
+        <a href="/logout" class="btn btn-dark btn-default btn-lg">Logout</a>
+    </div>
+      <!-- 10.1080/03772063.2016.1147389 -->
+      <!-- Bootstrap javascipt -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="../bundle.js"></script> -->
+
+</script>
+</body>
+</html>

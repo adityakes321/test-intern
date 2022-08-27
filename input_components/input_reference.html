@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPMS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+         .patent_file{
+        position: absolute;
+        bottom: -280px;
+}
+    </style>
+  </head>
+  <body>
+    <form method="post" action="/reference" class="abc">
+    
+      <div class="form-group col-12">
+        <label for="exampleTextarea">DOI of the paper</label>
+        <textarea
+          name="dop"
+          id="doi-input"
+          class="form-control"
+          rows="1"
+        ></textarea>
+        <button type="button" class="btn btn-primary mt-3" id="search-doi">
+          Search DOI
+        </button>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">Full IEEE Reference</label>
+        <textarea name="fir" class="form-control" rows="1"></textarea>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">Unique ID</label>
+        <textarea id="uid" name="ui" class="form-control" rows="1"></textarea>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">Title of Book published</label>
+        <textarea name="top" id="title-of-paper" class="form-control" rows="2"></textarea>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">Name of Faculty authors</label>
+        <textarea id="name" name="nofa" class="form-control" rows="1"></textarea>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">Name of the Publisher</label>
+        <textarea name="nop" class="form-control" rows="1"></textarea>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">ISBN Number</label>
+        <textarea id="issn" name="in" class="form-control" rows="1"></textarea>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleSelect1">Publication Year</label>
+        <select id="py" name="py" class="form-control">
+          <option>2021</option>
+          <option>2022</option>
+        </select>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleSelect1">Co authors of this paper are</label>
+        <select name="ca" class="form-control">
+          <option>UG Students</option>
+          <option>PG Students</option>
+          <option>PhD Scholars</option>
+          <option>JIIT Faculty</option>
+          <option>Others</option>
+        </select>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleTextarea">Google Scholar Citation Count</label>
+        <textarea name="gscc" class="form-control" rows="1"></textarea>
+      </div>
+      <br><br><br>
+      <div class="form-group col-12">
+        <button class="submit_button tn btn-primary" type="submit">Submit</button>
+      </div>
+</form>
+<form class="patent_file form-group col-12 " action="/upload" method="POST" enctype="multipart/form-data">
+<input class="child" type="file" name="uploadedFile" />
+<input class="upload_button" type="submit" value="Upload File" />
+</form>
+
+<script>
+$(document).ready(function(){  
+$("#submit_button").click(function(){
+    $( "#upload_button" ).click();
+
+});
+});
+</script>
+
+
+
+    <script  src="./scripts/input_journal.js"></script>
+    
+  </body>
+</html>
